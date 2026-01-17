@@ -5,7 +5,7 @@ import io
 
 # --- [1. API 설정] ---
 # Streamlit Secrets에서 API 키를 가져옵니다.
-API_KEY = st.secrets["AIzaSyBdNxk_ytJFxFPlAaRlf20HMarLIT9oO9A"]
+API_KEY = st.secrets["GEMINI_API_KEY"]
 client = genai.Client(api_key=API_KEY)
 
 # --- [2. UI/UX 디자인 (고급 퍼스널 스튜디오 스타일)] ---
@@ -75,3 +75,4 @@ if img_file:
                 file_name="ADAM_AI_REPORT.html",
                 mime="text/html",
             )
+
